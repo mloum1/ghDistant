@@ -9,12 +9,12 @@ public class Algo {
     }
 
     private void initialiserFenetreWindow() {
-        JFrame fenetre = new JFrame("Hello World");
+        JFrame fenetre = new JFrame(Constantes.HELLO_WORLD);
 
         fenetre.setSize(200, 200);
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JLabel label = new JLabel("Hello World", JLabel.CENTER);
+        JLabel label = new JLabel(Constantes.HELLO_WORLD, JLabel.CENTER);
 
         label.setOpaque(true);
         label.setBackground(Color.YELLOW);
