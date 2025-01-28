@@ -17,7 +17,7 @@ public class Algo {
         JLabel label = new JLabel(Constantes.HELLO_WORLD, JLabel.CENTER);
 
         label.setOpaque(true);
-        label.setBackground(Color.RED);
+        label.setBackground(Color.GREEN);
 
         fenetre.add(label);
         fenetre.setVisible(true);
