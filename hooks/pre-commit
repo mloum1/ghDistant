@@ -4,6 +4,10 @@ FICHIER_DE_TRACAGE="suivi/commitinfo.txt"
 
 mkdir -p suivi
 
+if [ ! -f "$FICHIER_DE_TRACAGE" ]; then
+    touch "$FICHIER_DE_TRACAGE"
+fi
+
 read -p "Voulez-vous ajouter 'commit vérifié' avec la date ? (y/n) : " yn < /dev/tty
 case $yn in
     [Yy]*)
