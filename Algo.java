@@ -11,7 +11,7 @@ public class Algo {
     private void initialiserFenetreWindow() {
         JFrame fenetre = new JFrame(Constantes.HELLO_WORLD);
 
-        fenetre.setSize(200, 200);
+        fenetre.setSize(800, 400);
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel label = new JLabel(Constantes.HELLO_WORLD, JLabel.CENTER);
