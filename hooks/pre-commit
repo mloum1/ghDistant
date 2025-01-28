@@ -1,0 +1,19 @@
+#!/bin/bash
+
+FICHIER_DE_TRACAGE="suivi/commitinfo.txt"
+
+mkdir -p suivi
+
+read -p "Voulez-vous ajouter 'commit vérifié' avec la date ? (y/n) : " yn < /dev/tty
+case $yn in
+    [Yy]*)
+        echo "✅ Ajout du commit vérifié avec la date."
+        echo "commit vérifié - $(date)" >> "$FICHIER_DE_TRACAGE"
+        git add "$FICHIER_DE_TRACAGE"
+        ;;
+    [Nn]*) 
+        echo "❌ Annulation de l'ajout du commit vérifié."
+        ;;
+esac
+
+exit 0
